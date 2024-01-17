@@ -1,5 +1,10 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+# Utiliza una imagen base con ASP.NET Core
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+EXPOSE 80
 
+# Utiliza una imagen base con el SDK de ASP.NET Core para compilar la aplicación
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY . .
 
