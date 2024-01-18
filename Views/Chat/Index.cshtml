@@ -1,17 +1,21 @@
 ﻿<div class="row">
-    <h2>Salas</h2>
-    <div class="col-md-8 offset-2">
-        <ul class="list-group">
+  <div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Salas</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Ingresar a una de las salas</h6>
+                <ul class="list-group">
 
-            @foreach(var e in ChatHub.Controllers.ChatController.Rooms){
-                <li class="list-group-item">
-                    <a href="~/Chat/Room?room=@e.Key">
-                        @e.Value
-                    </a>
-                </li>
-            }
+                    @foreach (var e in ChatHub.Controllers.ChatController.Rooms)
+                    {
+                        <li class="list-group-item">
+                            <a href="~/Chat/Room?room=@e.Key">
+                                @e.Value
+                            </a>
+                        </li>
+                    }
 
 
-        </ul>
-    </div>
+                </ul>
+  </div>
+</div>
 </div>
