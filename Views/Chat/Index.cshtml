@@ -8,7 +8,7 @@
                     @foreach (var e in ChatHub.Controllers.ChatController.Rooms)
                     {
                         <li class="list-group-item">
-                            <a href="~/Chat/Room?room=@e.Key">
+                            <a style="text-decoration:none" href="~/Chat/Room?room=@e.Key">
                                 @e.Value
                             </a>
                         </li>

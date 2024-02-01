@@ -9,7 +9,8 @@ namespace ChatHub.Controllers
         {
             {1,"Fútbol"},
             {2,"Política"},
-            {3,"Música"}
+            {3,"Música"},
+            {4,"General"}
         };
 
         [HttpGet]
